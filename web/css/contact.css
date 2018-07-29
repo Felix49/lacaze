@@ -1,0 +1,16 @@
+.contact .bloc-gauche{
+	float: left;
+	width: 48%;
+	margin: 1%;
+}.contact .bloc-droite{
+	float: right;
+	width: 48%;
+	margin: 1%;
+}
+
+.map{
+	border: 1px solid rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	-webkit-box-shadow:inset 3px 3px 12px 2px rgba(0,0,0,0.5);
+	box-shadow:inset 3px 3px 12px 2px rgba(0,0,0,0.5);
+}

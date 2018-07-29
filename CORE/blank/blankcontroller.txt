@@ -1,0 +1,22 @@
+<?php 
+
+class bllankController extends Controller{
+
+	function __construct($param){
+		parent::__construct($param);
+		
+		//actions
+		if(isset($param['action']) && method_exists($this, $param['action'])) call_user_func([$this,$param['action']]);
+
+		$this->init();
+
+		$this->lunchView('bllank');
+	}
+
+	private function init(){
+		
+		$this->view->setData(array('title' => 'Title'));
+		
+	}
+	
+}

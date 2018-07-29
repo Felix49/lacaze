@@ -1,0 +1,616 @@
+/*
+*	COULEURS
+	Vert principal : #089467
+*/
+
+/*
+
+	######### HEADER
+*/
+
+header{
+	height: 80px;
+	background: #089467;
+    z-index: 999;
+}header .header-wrapper{
+	max-width: 990px; height: 100px;
+	margin: auto;
+	position: relative;
+}
+header .logo{
+	position: absolute;
+	left: 0;
+	top: 0px;
+    padding-top: 10px;
+    height: 100%;
+    max-width: 250px;
+	transition: 450ms ease-out;
+}
+header .logo h1{
+    float: left;
+    color: #f1f1f1;
+    margin: 11px 10px;
+    padding: 0;
+}
+header .logo h3{
+    font-family: simplicity ;
+    float: left;
+    color: #121212;
+    margin: -5px 0 0 10px;
+    padding: 0;
+
+    display: none;
+}
+header .logo img{
+    max-height: 60px;
+    float: left;
+}
+header .logo:hover{
+	opacity: 0.7;
+	margin-left: 10px;
+}
+header .btn-menu{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    font-family: Roboto,Arial;
+}
+header .btn-menu img{
+    padding: 0 5px;
+    max-height: 30px;
+    vertical-align: text-bottom;
+}
+header ul{
+	position: relative;
+	float: right;
+	margin:0 0 0 0;
+	padding: 0;
+	height: 100%;
+}
+header ul li{
+	border-bottom: 0px solid  #022716;
+	font-family: Roboto;
+	font-weight: 300;
+    font-size: 18px;
+    color :#fff;
+	height: 100%;
+	display: inline-block;
+	padding: 0px 10px;
+	text-align: center;
+    line-height: 80px;
+    transition : 100ms ease-out;
+}header ul li:hover,
+header ul li.active{
+    background: #fff;
+    color :#022716;
+}
+header li a{
+    transition : 50ms;
+}
+
+ .home .body .wrap{
+     padding-top: 50px;
+ }
+.body > .wrap{
+    padding-top: 30px;
+}
+.body{
+	background: url(../img/back.jpg);
+	background-size: cover; 
+}
+
+/*
+*
+
+	############## CONTENT
+*/
+
+.body{
+	/*border-top: 1px solid #089467;*/
+}
+
+.content{
+	border: 1px solid #eee;
+	background: #ececec;
+	border-radius: 5px;
+	margin: 0px 0 -10px 0;
+	-webkit-box-shadow: 0 5px 8px 5px rgba(0,0,0,00.5);
+	box-shadow: 0 5px 8px 5px rgba(0,0,0,00.5);
+	z-index: 99;
+	position: relative;
+	padding: 15px;
+}
+.content.home{
+	margin-top: 350px;
+}
+.content.home h2{
+    margin-top: -5px;
+}
+.content .middle{
+	width: 68%;
+	margin: 1%;
+	float: left;
+}
+
+.content .col-droite{
+	width: 28%;
+	margin: 1%;
+	float: right;
+}
+
+/*
+*		CONTACT
+*/
+
+iframe{
+	width: 100%;
+}
+iframe.inshadow{
+	-webkit-box-shadow:inset 0 0 5px 10px rgba(0,0,0,0.5);
+	box-shadow:inset 0 0 5px 10px rgba(0,0,0,0.5);
+}
+
+
+/*
+	################# FOOTER
+*
+*/
+footer{
+	border-top: 50px #089467 solid ;
+	background: #e6e6e6;
+	color: #444;
+	border-bottom: 1px solid #444;
+}
+footer .bloc:first-child{
+	margin-left: 0;
+}
+footer .bloc:last-child{
+	margin-right: 0;
+}
+footer .bloc{
+	float: left;
+	width: 22%;
+	margin:  20px 1%;
+}
+footer .bloc.right{
+	float: right;
+}
+
+.fb{
+    border: 2px solid #14629e;
+    color: #14629e;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin: 15px 0;
+}
+.fb:hover{
+    background: #14629e;
+    color: #fff;
+}
+
+footer input{
+	
+	box-sizing: border-box;
+}
+
+input[type=submit].news{
+	background: #089467;
+	width: auto;
+	border-radius: 3px;
+	float: right;
+	font-size: 16px;
+	color: #fff;
+	padding: 3px 5px;
+}
+/*
+*	##############  FORMULAIRE
+*/
+
+form.contact input,
+form.contact textarea{
+	background: #089466;
+	padding: 10px 5px;
+	border-radius: 3px;
+	color: #fff;
+	display: block;
+	margin: 0 0 15px 0;
+	box-sizing: border-box;
+}
+form.contact *[type=submit]{
+	display: block;
+	margin: 20px auto;
+	background: #089466;
+	padding: 40px 50px 10px 50px;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 20px;
+	border: none;
+	font-family: Roboto, verdana;
+	font-weight: 300;
+	border: 2px solid #089466;
+	position: relative;
+}
+form.contact *[type=submit]:hover{
+	cursor: pointer;
+	background: none;
+	color: #089466;
+}
+form.contact *[type=submit]:before{
+	content: url(/web/img/send.png);
+	position: absolute;
+	top: 10px;
+	left: 41%;
+}
+
+form input.input-error{
+	border: 2px solid #EF3F3F; 
+}
+
+::-webkit-input-placeholder { color:#bbb; }
+::-moz-placeholder { color:#bbb; } /* firefox 19+ */
+:-ms-input-placeholder { color:#bbb; } /* ie */
+input:-moz-placeholder { color:#bbb; }
+
+#map{
+    height : 400px;
+}
+input[name=mapsearch]{
+    width: 70%;
+    display : inline-block;
+}
+
+button#mapsearch{
+    margin: 0 15px ;
+    color: #222222;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 6px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*----------------  *
+                    *
+    LE CAMPING      *
+                    *
+-------------------*/
+
+.fresco{
+    margin: 30px 0;
+}
+
+.fresco img{
+    /*max-width: 20%;*/
+    max-height:200px ;
+}
+.fresco.lecamping img{
+    max-width: 24.5% ;
+    max-height: 100%;
+}
+
+
+/*
+*		ALENTOURS
+*/
+
+a.spot-mini{
+	display: block;
+	max-width: 25%;
+	height: 150px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+    margin: 5px;
+}
+a.spot-mini img{
+	height: 100%;
+}
+a.spot-mini .details{
+	transition: 200ms ease-out;
+	position: absolute;
+	bottom: 0;left: 0;right: 0;top: 0;
+}
+a.spot-mini .details p.detail{
+	transition: 300ms ease-out;
+	position: absolute;
+	text-align: center;
+    font-weight: 500;
+	width: 100%;
+    margin: 0;
+	padding: 6px 0;
+	background: rgba(255,255,255,0.7);
+	text-transform: uppercase;
+}
+a.spot-mini .details p.detail.dnom{
+    bottom: 0px;
+}
+a.spot-mini .details p.detail.ddist{
+    top: 150px;
+    background: none;
+}
+a.spot-mini:hover .details{
+	top: 0;
+	background: rgba(8,148,103,0.8);
+}
+a.spot-mini:hover .details p.detail{
+	background: none;
+    color: white;
+}
+a.spot-mini:hover .details p.detail.dnom{
+    bottom: 30px;
+}
+a.spot-mini:hover .details p.detail.ddist{
+    top: auto;
+}
+
+p.infomap{
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: #848484;
+    font-weight:600 ;
+}
+p.infomap .emp{
+    color: #222222;
+}
+div#map-canvas{
+	/*margin-top: 50px;*/
+}
+div#map-canvas #mapalentours{
+	max-height: 100%;
+    height: 300px;
+}
+
+.description{
+    font-family: Roboto;
+}
+
+/* ///////////////////////////////////////////
+*
+*
+*		CAROUSEL GALLERIE PHOTO
+*
+*	
+///////////////////////////////////////////**/
+
+body.photos .body{
+	background: #2b2b2b;
+}
+.nested{
+    padding: 0 0 30px 0;
+}
+.photos a.box.nb img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.big-picture{
+	position: relative;
+	text-align: center;
+}.big-picture img{
+	max-height: 900px;
+}
+
+.small-picture img{
+	height: 130px;
+	cursor: pointer;
+}
+
+.small-picture .owl-item:hover{
+	background: #454545;
+}
+
+.small-picture .owl-item.active{
+	/*background: #f0f0f0;*/
+}
+
+.nested .brick{
+    width: calc(25% - 3px);
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+.nested .brick a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 1px;
+}
+
+/*
+*	LOADER
+*/
+.loader{
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	display: none;
+	background: rgba(255,255,255,.5);
+}.loader.active{
+	display: block;
+}
+svg {
+  position: absolute;
+  left: 49%;
+  right: 0;
+  top: 49%;
+  bottom: 0;
+}
+
+.rect {
+  fill: none;
+  stroke-width: 8px;
+  stroke: black;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 50%;
+  -webkit-animation: movedash 1.5s forwards 0s infinite;
+          animation: movedash 1.5s forwards 0s infinite;
+}
+
+@-webkit-keyframes movedash {
+  to {
+    stroke-dashoffset: 250%;
+  }
+}
+
+@keyframes movedash {
+  to {
+    stroke-dashoffset: 250%;
+  }
+}
+
+/* ///////////////////////////////////////////
+*
+*
+*		CALENDRIER RESERVATIONS
+*
+*
+///////////////////////////////////////////**/
+
+p.month{
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+p.month .year{
+    color: #555555;
+    font-weight: 300;
+}
+table.calendar{
+    font-family: Roboto, Arial;
+    float: left;
+    max-width: 50%;
+}
+table.calendar tr{
+    background: #d8d8d8;
+    border-bottom: none;
+}
+table.calendar tr:nth-child(2n){
+    background: #d0d0d0;
+}
+table.calendar tr.days{
+    background: #089467;
+    text-transform: uppercase;
+    color: White;
+}
+table.calendar tr.days td{
+    border-right: none ;
+}
+table.calendar tr.days td:hover{
+    background: inherit;
+    cursor: inherit;
+}
+table.calendar td{
+    text-align: center;
+    height: 40px;
+    border-right: 1px solid #a8a8a8;
+    cursor: pointer;
+}
+table.calendar td.otmonth{
+    color: #999;
+}
+table.calendar td.intm{
+    background: #93caa3;
+    border-color: #808080;
+    /*font-weight: bold;*/
+}
+table.calendar td.selected{
+    background: #098d38;
+    color: #fff;
+    font-weight: bold;
+}
+table.calendar td:last-child{
+    border-right: none ;
+}
+table.calendar td:hover{
+    background: white;
+    color: #111;
+}
+span.navmonth{
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 32px;
+    padding: 0 5px;
+}
+span.navmonth.prev{
+}
+span.navmonth.next{
+    float: right;
+}
+span.m{
+    padding-left: 10px;
+}
+span.navmonth:hover{
+    color: #767676;
+}
+.c20_10{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.leftcalendar{
+    float: left;
+}
+.legende{
+    font-style: italic;
+    text-align: center;
+}
+
+.rightcalendar{
+    float: left;
+    width: 50%;
+    padding: 45px 0px;
+}
+.rightcalendar form .line-double input{
+    width: 85%;
+}
+.datesel{
+    /*text-transform: uppercase;*/
+    font-weight: 400;
+    font-size: 18px;
+}
+.datesel span{
+    font-weight: 800;
+}
+form.resa input{
+    background: #fff;
+    border-radius: 3px;
+    border: none ;
+}
+form.resa label{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+p.reset{
+    color: #346aa3;
+    text-decoration: underline;
+    font-style: italic;
+    text-align: right;
+    margin: -10px 0 12px 0;
+    padding: 0;
+    cursor: pointer;
+}
+p.est-price{
+    text-align: center;
+    color : #ddd;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+p.est-price.active{
+    color : #777;
+}
+p.est-price span.price{
+    color : #333;
+    font-weight:500;
+}

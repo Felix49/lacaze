@@ -1,0 +1,83 @@
+.over{
+	color: black;
+	font-weight: 400;
+	opacity: 0;
+	z-index: 900;
+	position: fixed;
+	top: 0;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	background: rgba(0,0,0,0);
+}.over.active{
+	opacity:1 ;
+	-ms-pointer-events: auto;
+	pointer-events: auto;
+	background: rgba(0,0,0,0.6);
+}
+.over .cross{
+	color: #333;
+	font-size: 20px;
+	position: absolute;
+	top: 13px; right: 13px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+	border-radius: 35px;
+	background: rgba(255,255,255,0.3);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 250ms ease-in;
+	-moz-transition: all 250ms ease-in;
+	-ms-transition: all 250ms ease-in;
+	-o-transition: all 250ms ease-in;
+	transition: all 250ms ease-in;
+}.over .cross:hover{
+	cursor: pointer;
+	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(180deg);
+}
+.over .notif{
+	-webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.4);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.4);
+	position: relative;
+	max-width: 80%;
+	top: 100px;
+	margin: auto;
+	background: #ddd;
+	padding-bottom: 10px;
+}.notif p{
+	margin: 0 5%;
+	padding: 15px 20px;
+}.notif h3{
+	color: #fff;
+	font-size: 35px;
+	text-align: center;
+	padding: 7px;
+	margin: 0;
+	background: #555;
+}.notif.error h3{
+	background: #923;
+}
+.notif button{
+	display: none;
+	font-size: 19px;
+	color: #000;
+	background: #999;
+	padding: 10px 50px;
+	margin: auto;
+	border: none;
+}.notif button:hover{
+	padding: 10px 60px;
+	background: #bbb;
+	cursor:pointer ;
+}.notif.error button:hover{
+	border-left: 5px solid #923;
+	border-right: 5px solid #923;
+}

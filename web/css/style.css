@@ -1,0 +1,244 @@
+/*
+*	COULEURS
+	Vert principal : #089467
+*/
+
+/* Import des pages css */ 
+@import url(main.css);
+@import url(contact.css);
+
+/* Import des polices */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic);
+
+@font-face {
+    font-family: "simplicity";
+    src: url(fonts/simplicity.ttf) format("truetype");
+}
+@font-face {
+    font-family: "qlassik";
+    src: url(fonts/Qlassik.ttf) format("truetype");
+}
+
+html{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body,html{
+	margin: 0;padding: 0;
+	font-family: qlassik;
+}
+
+li,a,button{
+	transition: 120ms;
+	-webkit-transition: 120ms;
+	-moz-transition: 120ms;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a.full{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.small{
+	background: #089467;
+	padding: 6px 10px;
+	margin: 25px 0;
+	font-size: 18px;
+	border-radius: 3px;
+	color: #fff;
+}
+.small-right{
+	background: #089467;
+	padding: 6px 10px;
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	border: 2px #089467 solid;
+	border-radius: 3px;
+	color: #fff;
+	width: auto;
+	float: right;
+}
+.small-right:hover{
+	border-color: #fff;
+	cursor: pointer;
+}
+
+.clear{clear: both;}
+
+img{
+	max-width: 100%;
+}
+
+h1{
+	font-family: simplicity;
+	font-weight: 300;
+	text-align: center;
+	font-size: 35px;
+	color: #089467;
+	text-transform: uppercase;
+}
+
+h2,h3{
+	font-family: qlassik;
+	font-weight: 500;
+	color: #089467;
+}
+h2{
+	color: #333;
+	font-size: 28px;
+	margin: 25px 0;
+	padding: 7px 0;
+	border-bottom: 3px solid #089467;
+}
+h3{
+	font-size: 24px;
+}
+h4{
+	font-size: 20px;
+	padding: 5px 0;
+	margin: 0;
+}
+
+p{
+	font-family: Roboto, Verdana;
+	margin: 5px 0;
+}
+p a{
+	font-weight: bold;
+}
+p a:hover{
+	text-decoration: underline;
+}
+.wrap{
+	max-width: 990px;
+	margin: auto;
+}
+.wrapin{
+	max-width: 600px;
+	margin: auto;
+}
+
+p.sign{
+	font-size: 15px;
+	font-style: italic;
+	margin: 0;
+	padding: 4px 0;
+}
+
+.left{   float: left; width: 49%;} .right{ float: right; width: 49%;}
+
+/*
+*	Tableaux
+*/
+table{
+	border-collapse: collapse;
+}
+table td, table th{
+	padding: 10px;
+}
+table tr{
+	border-bottom: 1px solid #777; 
+}
+
+/*
+*		FORMULAIRES
+*/
+
+form{
+	margin: 0;
+}
+
+form .line{
+	width: 100%;
+	margin: 5px 0;
+	height: 40px;
+    display: inline-block;
+}form .line label{
+	width: 35%;
+	float: left;
+	text-align: right;
+	padding: 5px;
+}form .line input,
+form .line textarea,
+form .line select{
+	width: 57%;
+	float: right;
+	margin: 0 3% 0 0;
+}
+
+ form .line-double{
+     max-width: 45%;
+     float: left;
+ }
+ form .line-double label{
+     float: left;
+     padding: 0 10px;
+ }
+ form .line-double input{
+     float: left;
+     width: auto;
+ }
+
+input{
+	padding: 5px 5px;
+	margin: 10px 0;
+	background: rgba(255,255,255,0.1);
+	font-size: 19px;
+	border: none;
+	border: 2px #089467 solid;
+	max-width: 100%;
+	display: block;
+}input:focus{
+	background: rgba(255,255,255,0.5);
+	outline: none;
+}input.req{
+	border-left-color: #d42
+}
+input, textarea{
+	margin: 0 0 15px 0;
+	width: 100%;
+}
+
+form .line input[type=checkbox],
+form .line-double input[type=checkbox]{
+    margin-top: 10px;
+}
+
+.btn{
+    background: #089467 ;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 300;
+    display: block;
+    margin: 15px auto;
+}
+
+label{
+	font-size: 20px;
+	font-weight: 500;
+	display: block;
+}
+
+select{
+	background: #fff;
+	padding: 5px;
+	margin: 10px 0;
+	font-size: 19px;
+	border: none;
+	max-width: 100%;
+}select:focus{
+	outline: none;
+}
+select option{
+	background: #e5e5e5;
+	color: #089467;
+}

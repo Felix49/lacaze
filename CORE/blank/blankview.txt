@@ -1,0 +1,3 @@
+<div class="content">
+	Page bllank fraichement créée
+</div>
